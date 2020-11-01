@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="202.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.dataFetchingController">
+   <children>
+      <Pane prefHeight="208.0" prefWidth="329.0">
+         <children>
+            <ProgressBar fx:id="taskProgress" layoutX="65.0" layoutY="107.0" prefWidth="200.0" progress="0.0" />
+            <ProgressBar fx:id="overallProgress" layoutX="65.0" layoutY="150.0" prefWidth="200.0" progress="0.0" />
+            <Label layoutX="116.0" layoutY="132.0" text="Overall progress" />
+            <Label layoutX="101.0" layoutY="89.0" text="Current task progress" />
+            <Label layoutX="42.0" layoutY="25.0" text="Fetching Data from Phasmophobia Wiki..." />
+            <Label layoutX="42.0" layoutY="53.0" text="Current Task:" />
+            <Label fx:id="currentTaskLabel" layoutX="131.0" layoutY="53.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
